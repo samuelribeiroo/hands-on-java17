@@ -12,7 +12,7 @@ public class TaskModel {
     private Long id;
     private String title;
 
-    private String setTitle(String title) {
-        return title;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
