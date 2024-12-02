@@ -35,4 +35,10 @@ public class TaskAppController {
         return "redirect:/tasks";
     }
 
+    @PostMapping("/delete/{id}")
+    public String deleteTask(@PathVariable Long id) {
+        taskAppService.deleteTask(id);
+        return "redirect:/tasks";
+    }
+
 }
