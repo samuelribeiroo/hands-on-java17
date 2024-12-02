@@ -9,8 +9,8 @@ import jakarta.persistence.Id;
 public class TaskModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String title;
+    public Long id;
+    public String title;
 
     public void setTitle(String title) {
         this.title = title;
